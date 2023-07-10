@@ -1,0 +1,91 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(240, 148, 56);
+  padding: 10px;
+  text-align: left;
+  font-size: 25px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  /* float: left; */
+  width: 100%;
+  /* background: gray; */
+}
+
+/* Style the list inside the menu */
+nav ul {
+  /* list-style-type: none; */
+  padding: 0; 
+  margin: auto;
+  /* background-color: #666; */
+}
+
+
+
+/* Style the footer */
+footer {
+  background-color:#666;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+.img-wrapper {
+  /* text-indent: 50px; */
+  margin: 20px;
+  padding:20px;
+  /* display: inline-block; 
+  overflow: clip;      */
+  vertical-align: left;
+}
+
+.img-wrapper img {
+  /* display: inline-block;  */
+  /* overflow: hidden;   */
+  /* transition: all .2s ease; */
+}
+img{
+  /* display: block; */
+  transition: all .2s ease;
+  /* height:150px; */
+}
+
+.item-name{
+  font-size: 15px bold;
+
+}
+.item-desc{
+  font-style: italic;
+  font-size: 15px bold;
+  text-align: left;
+
+}
+.item-price{
+  font-size: 25px;
+  text-align: left;
+  margin-left: 10px;
+  color: green;
+}
+
+.an{
+  text-decoration: none;
+  cursor: default;
+  &:visited{
+    color: black;
+  }
+  &:link{
+    color: black;
+  }
+}

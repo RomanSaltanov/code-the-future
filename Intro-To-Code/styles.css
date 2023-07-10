@@ -1,0 +1,34 @@
+* {
+    font: 44px Arial, sans-serif;
+  }
+
+h1{
+    color: green;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.style_class{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    border-style: dotted;
+    font-size: 22px;
+}
+
+a:link {
+    color: purple;
+    text-decoration: none;
+  }
+  
+  /* Makes all visited links gray and with a line through */
+  a:visited {
+    color: gray;
+    text-decoration: line-through;
+  }
+  
+  /* Makes links purple and bold when hovered over */
+  a:hover {
+    color: purple;
+    font-weight: bold;
+  }
+
