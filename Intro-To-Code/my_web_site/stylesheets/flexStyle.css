@@ -1,18 +1,10 @@
-* {
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-	background-color: white;
-	color: black;
-}
 
 .flex-container {
 	display: inline-flex;
     flex-direction: row;
     flex-flow: wrap;
 	background-color: white;
-    justify-content: center;
+    justify-content: left;
 }
 
 .flex-item:hover {
@@ -26,74 +18,60 @@ body {
 .flex-item {
 	background-color: white;
 	width: 300px;
+	height: 450px;
 	margin: 5px;
 	border: 1px solid black;
 	-webkit-box-shadow: 0 10px 6px -6px #777;
 	-moz-box-shadow: 0 10px 6px -6px #777;
 		 box-shadow: 0 10px 6px -6px #777;
-/* 
-		 transition: transform .2s */
 }
-
 
 .menu{
-	display: inline-flex;
+	height: 40%;
+	display: flex;
     flex-direction: row;
-	/* border: 1px solid black; */
-	/* margin: 10px; */
-	/* padding: 20px; */
-	font-size: 20px;
-}
-
-.menu-item:hover {
 	background: rgb(240, 148, 56);
+	font-size: 20px;
 	
 }
-/* .menu-a{
-	color: white;
-	font-weight: 300;
-	letter-spacing: 2px;
-	text-decoration: none;
-	text-align: center;
-} */
+
 .menu-item {
-	/* text-align: center; */
+
+	height: 100%;
 	border-left: 2px solid black;
 	display: inline-block;
-	background: white;
-	padding: 20px;
-	/* width: 100%; */
-	/* margin: 0; */
+	padding: 10px;
+	&:hover {
+		opacity: 0.4;
+	}
 }
 
-
-
-.nav-container {
-text-align: center;
-	display: inline-flex;
-    flex-direction: row;
-    flex-flow: wrap;
-	background-color: white;
-    justify-content:left ;
+.flex-acticle {
+	flex-flow: nowrap;
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
 }
 
-.nav-item:hover {
-	&:hover img {
-		-ms-transform: scale(1.1); 
-		-webkit-transform: scale(1.1); 
-		transform: scale(1.1);
-	  }
-}
-
-.nav-item {
-	/* background-color: white; */
-	/* width: 300px; */
+.flex-acticle-item {
+	width: 100%;
 	margin: 5px;
-	/* border-bottom: 2px solid black; */
-	/* border: 1px solid black; */
-	/* -webkit-box-shadow: 0 10px 6px -6px #777;
-	-moz-box-shadow: 0 10px 6px -6px #777;
-		 box-shadow: 0 10px 6px -6px #777; */
-/* 
-		 transition: transform .2s */
 }
+
+.checkout {
+	flex-flow: wrap;
+	display: flex;
+}
+
+.checkout-item {
+	margin-right: 20px;
+	flex-basis: 40%;
+}
+
+.foot {
+	display: flex;
+	justify-content: space-between;
+	max-width: 200px;
+	margin: 0 auto;
+	/* padding: 10px 0; */
+  }
